@@ -1,0 +1,26 @@
+[
+  {
+    "name": "\ud64d\uae38\ub3d9",
+    "address": "\ubd80\uc0b0",
+    "tel": "010-8888-2222",
+    "email": "hong@gmail.com"
+  },
+  {
+    "name": "\uae40\ub098\ub9ac",
+    "address": "\uad11\uc8fc",
+    "tel": "111-1111-1111",
+    "email": "kim@gmail.com"
+  },
+  {
+    "name": "\uc548\ud76c\uc218",
+    "address": "\uc138\uc885",
+    "tel": "010-555-9999",
+    "email": "aaa@gmail.com"
+  },
+  {
+    "name": "\ubc15\ub098\uc815",
+    "address": "\uc138\uc885",
+    "tel": "010-9999-9999",
+    "email": "park@gmail.com"
+  }
+]
