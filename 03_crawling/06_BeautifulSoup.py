@@ -12,16 +12,16 @@ and they lived at the bottom of a well.</p>
 <p class="story">...</p>
 """
 soup = BeautifulSoup(html_doc,'html.parser')
-# print(soup)
-# print(soup.title)
-# print(soup.a)
-# print(soup.title.string)
-# print(soup.a['id'])
-# print(soup.find_all('a'))
-# print(soup.find_all('p','story'))
-# print(soup.find_all(id='link2'))
-# print(soup.find_all(class_='sister'))
-# print(soup.css.select('title'))
+print(soup)
+print(soup.title)
+print(soup.a)
+print(soup.title.string)
+print(soup.a['id'])
+print(soup.find_all('a'))
+print(soup.find_all('p','story'))
+print(soup.find_all(id='link2'))
+print(soup.find_all(class_='sister'))
+print(soup.css.select('title'))
 
 import requests,os
 from urllib import request
@@ -33,12 +33,13 @@ path = os.path.dirname(__file__) + '/down/'
 if not os.path.exists(path):
     os.makedirs(path)
 
-# print(result.text)
+print(result.text)
 soup = BeautifulSoup(result.text,'html.parser')
 imgdata = soup.find_all('img')
 for i,item in enumerate(imgdata):
     try:
         request.urlretrieve(item['src'],path+'img_'+str(i)+'.jpg')
         print(item['src'])
+        pass
     except:
         pass
