@@ -8,13 +8,13 @@ soup = BeautifulSoup(result,'html.parser')
 name=[]
 price=[]
 data = soup.select('td.tit > a')
-# print(data)
+#print(data)
 for item in data:
-    # print(item.text.strip())
+    print(item.text.strip())
     name.append(item.text.strip())
 print(name)
 data = soup.select('td.sale')
-# print(data)
+print(data)
 for item in data:
     # print(item.text.strip().replace(',',''))
     price.append(float(item.text.strip().replace(',','')))
